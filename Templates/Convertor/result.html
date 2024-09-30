@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Conversion Success</title>
+</head>
+<body>
+    <h1>Converted Images</h1>
+    <ul>
+        {% for image_path in image_paths %}
+        <li><img src="{{ image_path }}" alt="Slide image"></li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
